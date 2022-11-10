@@ -205,18 +205,43 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.nav .icons img {
-    width: 30px;
-    height: 30px;
-}
-.nav .icons span{
-    font-size: 20px;
-    margin-right: 10px;
-    color: black;
     position: relative;
 }
-.nav .icons span::before{
+#notification {
+    cursor: pointer;
+}
+.nav .icons .notification{
+    width: 300px;
+    background-color: #EEEEEE;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: none;
+}
+.nav .icons .notification .notfbar{
+    background-color: white;
+    color: var(--grey-color);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+.nav .icons .notification .notfbar .notfindicator {
     content: "";
     position: absolute;
     background-color: red;
@@ -227,8 +252,33 @@ ul{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    right: -2px;
-    top:-4px
+    right: 0px;
+    top: 5px
+}
+
+.nav .icons img {
+    width: 30px;
+    height: 30px;
+}
+.nav .icons span{
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+    position: relative;
+}
+.nav .icons .indicator {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    right: 30px;
+    top: -1px;
 }
 @media (max-width:424px) {
     .nav input{
