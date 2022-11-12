@@ -1,24 +1,4 @@
 var clickOnNotf = document.querySelectorAll(".notfbar")
-// console.log(clickOnNotf);
-
-// for (let i = 0; i < clickOnNotf.length; i++) {
-
-//     var notfCircle = window.getComputedStyle(
-//         document.querySelector('.notfbar'), '::before'
-//     )
-//     clickOnNotf[i].addEventListener("click", () => {
-//         notfCircle.setProperty("display", "none");
-//     })
-    
-// }
-
-// var notfCircle = window.getComputedStyle(
-// 	document.querySelector('.notfbar'), '::before'
-// )
-
-// // box.addEventListener("click" , (e) => {
-// //     console.log(e);
-// // })
 
 var notificationBell = document.getElementById("notification")
 
