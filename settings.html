@@ -7,6 +7,7 @@
     <title>Settings</title>
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/settings.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +22,13 @@
             <!-- <hr> -->
             <ul>
                 <li>
-                    <a class="active" href="index.html">
+                    <a href="index.html">
                         <i class="fa-solid fa-chart-line fa-fw"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="settings.html">
+                    <a class="active" href="settings.html">
                         <i class="fa-solid fa-gear fa-fw"></i>
                         <span>Settings</span>
                     </a>
@@ -213,6 +214,92 @@
                     <div class="d-flex align-center">
                         <i class="fa-brands fa-youtube"></i>
                         <input type="text" name="tw" id="tw" placeholder="Youtube Username">
+                        </div>
+                </div>
+
+                <!-- Widget Card -->
+                    <div class="card widget p-20">
+                        <h2>Widgets Control</h2>
+                        <p>Show/Hide Widgets</p>
+                        <div class="checkboxs">
+                            <input type="checkbox" name="quick" id="quick">
+                            <label for="quick">Quick Draft</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+
+                        <div class="checkboxs">
+                            <input type="checkbox" id="yearly-targets" checked>
+                            <label for="yearly-targets">Yearly Targets</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+
+                        <div class="checkboxs">
+                            <input type="checkbox" id="ticket">
+                            <label for="ticket">Tickets Statistics</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+
+                        <div class="checkboxs">
+                            <input type="checkbox" id="news" checked>
+                            <label for="news">Latest News</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+
+                        <div class="checkboxs">
+                            <input type="checkbox" id="tasks">
+                            <label for="tasks">Latest Tasks</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+
+                        <div class="checkboxs">
+                            <input type="checkbox" id="top-search" checked>
+                            <label for="top-search">Top Search Items</label>
+                            <span class="true"><i class="fa-solid fa-check"></i></span>
+                        </div>
+                    </div>
+                    <!-- Backup Card -->
+                    <div class="card backup p-20">
+                        <h2>Backup Manager</h2>
+                        <p>Control Backup Time And Location</p>
+                        <div class="radio">
+                            <input type="radio" name="time" id="daily">
+                            <label for="daily">Daily</label>
+                        </div>
+                        
+                        <div class="radio">
+                            <input type="radio" name="time" id="monthly">
+                            <label for="monthly">Monthly</label>
+                        </div>
+        
+                        <div class="radio">
+                            <input type="radio" name="time" id="yearly">
+                            <label for="yearly">Yearly</label>
+                        </div>
+
+                        <div class="servers d-flex align-center">
+                            <div>
+                                <input type="radio" name="servers" id="Media">
+                                <label for="Media">
+                                    <i class="fa-solid fa-server"></i>
+                                    Media
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="servers" id="Mega">
+                                <label for="Mega">
+                                    <i class="fa-solid fa-server"></i>
+                                    Mega
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="servers" id="Amazon">
+                                <label for="Amazon">
+                                    <i class="fa-solid fa-server"></i>
+                                    Amazon
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
