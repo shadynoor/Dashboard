@@ -271,7 +271,7 @@ input:checked + .toggle-switch span {
     font-size: 14px;
     left: 13px;
     color: white;
-    top: 10px;
+    top: 12px;
 }
 .widget input:checked + label::before{
     background-color: var(--blue-color);

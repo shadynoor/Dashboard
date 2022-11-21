@@ -54,7 +54,7 @@ ul{
 }
 .sidebar ul li a {
     color: black;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     transition: .3s;
@@ -230,6 +230,7 @@ ul{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     display: none;
+    z-index: 100;
 }
 @media (max-width:767px) {
     .nav .icons .notification{

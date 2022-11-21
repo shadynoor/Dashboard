@@ -18,10 +18,18 @@ notificationBell.addEventListener("click" , () => {
     }
 })
 
+window.addEventListener("click", (e) => {
+    // console.log((e.target.className = "notfbar").parentElement);
+    if (e.target.className == "notification" || e.target.className == "notfbar" || e.target.className == "fa-regular fa-bell fa-fw") {
+        notificationList.style.display = "inline"
+    }else{
+        notificationList.style.display = "none"
+    }
+})
+
 for (let i = 0; i < clickOnNotf.length; i++) {
     clickOnNotf[i].addEventListener("click",() => {
         notfindicator[i].style.display = "none"
     })
     
 }
-
